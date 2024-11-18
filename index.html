@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="aiNexusApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Nexus - Maharaja Institute of Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("qEzNRNvXUFOfU3Xl9"); // Replace "YOUR_USER_ID" with your actual EmailJS user ID
+        })();
+    </script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="ContactController">
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="Photos/ai.png" alt="AI Logo" class="logo left-logo">
+            
+            <div class="header-text">
+                <h1>AI-Nexus</h1>
+                <p class="subtitle">The Bridge between Human and Machine</p>
+                <p class="institute">Maharaja Institute of Technology, Thandavapura, Mysore, Karnataka</p>
+            </div>
+            
+            <img src="Photos/Logo.png" alt="Institution Logo" class="logo right-logo">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faculties">Faculties</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="profile.html">Developer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About AI-Nexus</h2>
+        <p>AI-Nexus is a student forum that bridges the gap between humans and machines, fostering innovation in the field of Artificial Intelligence and Data Science.</p>
+    </section>
+
+    <section id="faculties">
+        <h2>Our Faculties</h2>
+        <img src="Photos/faculty.jpg" alt="faculties" class="responsive-img">
+    </section>
+
+    <section id="teams">
+        <h2>Our Teams</h2>
+        <div class="team-images">
+            <img src="Photos/Slide2.PNG" alt="Team Image 1" class="responsive-img">
+            <img src="Photos/Slide3.PNG" alt="Team Image 2" class="responsive-img">
+            <img src="Photos/Slide4.PNG" alt="Team Image 3" class="responsive-img">
+            <img src="Photos/Slide5.PNG" alt="Team Image 4" class="responsive-img">
+            <img src="Photos/Slide6.PNG" alt="Team Image 5" class="responsive-img">
+        </div>
+    </section>
+
+    <section id="events">
+        <h2>Our Events</h2>
+        <div class="event-collage">
+            <img src="Photos/e1.jpg" alt="Event 1" class="collage-img">
+            <img src="Photos/e2.jpg" alt="Event 2" class="collage-img">
+            <img src="Photos/e3.jpg" alt="Event 3" class="collage-img">
+            <img src="Photos/e4.jpg" alt="Event 4" class="collage-img">
+            <img src="Photos/e5.jpg" alt="Event 5" class="collage-img">
+            <img src="Photos/e6.jpg" alt="Event 6" class="collage-img">
+        </div>
+    </section>
+    
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Location: Maharaja Institute of Technology Thandavapura, Nanjangud Taluk, Mysore, Karnataka - 571302</p>
+        <form ng-submit="sendEmail()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" ng-model="contact.name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" ng-model="contact.email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" ng-model="contact.message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 AI-Nexus | Maharaja Institute of Technology</p>
+    </footer>
+</body>
+</html>

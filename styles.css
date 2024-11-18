@@ -1,0 +1,176 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    color: #333;
+    background-color: #f9f9fc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header styling */
+header {
+    background-color: #093a6e;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3em; /* Increased font size for better visibility */
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.3em; /* Increased subtitle font size */
+    margin-bottom: 0.3em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.institute {
+    font-size: 1.5em; /* Increased font size for the institute name */
+    margin-bottom: 1em;
+}
+
+/* Logo styling */
+.logo {
+    width: 120px; /* Adjusted logo size */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Navigation styling */
+nav {
+    margin-top: 15px; /* Added margin for better spacing */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap for better spacing */
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 15px; /* Increased padding for buttons */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border-radius: 5px; /* Rounded corners for better aesthetics */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle background on hover */
+}
+
+/* Section styling */
+section {
+    max-width: 900px; /* Increased section width */
+    margin: 40px auto; /* Increased margin for more space */
+    padding: 25px; /* Increased padding for sections */
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Slightly increased border radius */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+h2 {
+    color: #2d3e50;
+    font-size: 2.2em; /* Increased heading size */
+    margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+/* Responsive image styling */
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 20px; /* Spacing between images */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em; /* Increased gap for better spacing */
+    max-width: 600px; /* Increased form width */
+    margin-top: 20px; /* Increased top margin */
+}
+
+input, textarea {
+    padding: 12px; /* Increased padding for inputs */
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+input:focus, textarea:focus {
+    border-color: #2d3e50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+button {
+    background-color: #2d3e50;
+    color: #ffffff;
+    padding: 12px; /* Increased padding for button */
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em; /* Increased font size for button */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #4a596d; /* Change button color on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #2d3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px; /* Increased padding for footer */
+    position: relative; /* Keep footer at the bottom */
+}
+
+.event-collage {
+    display: grid; /* Use grid layout for the collage */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 15px; /* Spacing between images */
+    margin-top: 20px; /* Margin above collage */
+}
+
+.collage-img {
+    width: 100%; /* Full width to fill the grid cell */
+    border-radius: 8px; /* Rounded corners */
+    object-fit: cover; /* Ensures images fill the container */
+    height: 150px; /* Set a consistent height for all images */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.collage-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
