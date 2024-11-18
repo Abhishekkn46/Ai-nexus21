@@ -38,7 +38,7 @@ I am **Abhishek K N**, a BE student in Artificial Intelligence and Data Science,
 Feel free to reach out:
 - Email: [abhishekkn46@gmail.com](mailto:abhishekkn46@gmail.com)
 - Phone: +91 63645 30700
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com)
+- LinkedIn:https://www.linkedin.com/in/abhishek-k-n-193123291/
 ```
 
 ---
